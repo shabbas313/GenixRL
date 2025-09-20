@@ -166,21 +166,32 @@ Directly predict on a file that already contains the necessary sub-model scores.
       --timestamp <other_model_timestamp>
     ```
 
-### OPTIONAL: To train and evaluate model with new datasets
--   **To train:**
+### OPTIONAL: Training and Evaluation
+
+This repository also contains scripts for re-training and evaluating the GenixRL model. Refer to the manuscript for details on data preparation.
+
+-   **To train new model:**
     ```bash
     python scripts/train.py 
     ```
 Ensure the required training data is present in the data/ directory.
 
--   **To Evaluate on Independent Set**
+-   **To Evaluate a mdoel on Independent Set**
 	```bash
     python scripts/evaluate_model.py 
     ```
--   **To Optimize Clinical Utility**
+-   **To run Domain-Specific analysis - Optimize Clinical Utility**
 	```bash
     python scripts/domain_specific.py
     ```
+	
+## Data Availability	
+### VUS Reclassification Scores
+
+As a resource to the community, we have made the GenixRL reclassification scores for ~1.74 million missense Variants of Uncertain Significance (VUS) from ClinVar publicly available on Zenodo.
+-   **Download the full dataset:**
+	![alt text](https://zenodo.org/badge/DOI/10.5281/zenodo.17115405.svg)
+
 ---
 ## Citation
 
