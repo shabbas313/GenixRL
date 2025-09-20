@@ -1,5 +1,5 @@
 # GenixRL: Advancing Missense Variant Prediction and VUS Reclassification
-## via a Dynamic Reinforcement Learning Agent
+
 GenixRL is a state-of-the-art ensemble model for predicting the pathogenicity of missense variants. It uses a novel reinforcement learning (RL) framework to dynamically determine the optimal weights for combining scores from complementary predictors (BayesDel_addAF, BayesDel_noAF, ClinPred, and MetaRNN) to classify missense variants as 'Pathogenic' or 'Benign'.
 
 This repository contains the prediction script to run the pre-trained GenixRL model on your own variant data.
