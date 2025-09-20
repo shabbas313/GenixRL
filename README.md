@@ -190,7 +190,7 @@ Ensure the required training data is present in the data/ directory.
 
 As a resource to the community, we have made the GenixRL reclassification scores for ~1.74 million missense Variants of Uncertain Significance (VUS) from ClinVar publicly available on Zenodo.
 -   **Download the full dataset:**
-	![alt text](https://zenodo.org/badge/DOI/10.5281/zenodo.17115405.svg)
+	[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17115405.svg)](https://doi.org/10.5281/zenodo.17115405)
 
 ---
 ## Citation
