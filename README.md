@@ -1,11 +1,11 @@
-# GenixRL: Advancing Missense Variant Prediction and VUS Reclassification via a Dynamic Reinforcement Learning Agent
-
+# GenixRL: Advancing Missense Variant Prediction and VUS Reclassification
+## via a Dynamic Reinforcement Learning Agent
 GenixRL is a state-of-the-art ensemble model for predicting the pathogenicity of missense variants. It uses a novel reinforcement learning (RL) framework to dynamically determine the optimal weights for combining scores from complementary predictors (BayesDel_addAF, BayesDel_noAF, ClinPred, and MetaRNN) to classify missense variants as 'Pathogenic' or 'Benign'.
 
 This repository contains the prediction script to run the pre-trained GenixRL model on your own variant data.
 
 ![GenixRL Ensemble](data/framework-overview.png)
-*Figure: The GenixRL Ensemble Framework and Reinforcement Learning Mechanism.*
+**The GenixRL Ensemble Framework and Reinforcement Learning Mechanism.**
 ---
 
 ## Features
@@ -45,17 +45,17 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 **3. Install Dependencies**
-#Step No. 1:
-#Install all required third-party libraries
+
 ```bash
+Step No. 1: Install all required third-party libraries
 pip install -r requirements.txt
 ```
-#Step No. 2:
-#Install GenixRL, making the predict.py script available
+
 ```bash
+Step No. 2: Install GenixRL, making the predict.py script available
 pip install .
 ```
-***4. Download Annotation Database (for Annotation Mode only)**
+**4. Download Annotation Database (for Annotation Mode only)**
 
 If you plan to use the automated annotation mode (`--variant` or `--input-file`), GenixRL needs a local, tabix-indexed database file containing the required sub-model scores.
 
@@ -96,7 +96,8 @@ The output column `GenixRL_Predictions` will have one of three values:
 -   **Pathogenic**: Score is between the optimal and strong thresholds.
 -   **High-Confidence Pathogenic**: Score ≥ strong threshold (default: 0.709). This threshold can be adjusted with the `--strong-threshold` flag.
 
--   **Quick Start**
+## Quick Start
+
 #### Mode 1: Predict a Single Variant
 
 Quickly annotate and predict a single variant. GenixRL will use the default annotation database unless a different one is specified with --dbnsfp-path.
@@ -105,7 +106,7 @@ Quickly annotate and predict a single variant. GenixRL will use the default anno
 	```bash
     python scripts/predict.py --variant "6:32040871:C:A"
     ```
-	**With  a Custom Database**
+-   **With  a Custom Database**
 	```bash
     python scripts/predict.py --variant "6:32040871:C:A" --dbnsfp-path /path/to/your/dbNSFP5.2a_variant.tsv.gz
     ```
@@ -132,7 +133,7 @@ Annotate and predict a list of variants from a VCF, CSV, or TXT file.
 
 Directly predict on a file that already contains the necessary sub-model scores. This is the fastest method and **does not require dbNSFP**.
 
--   **Example Input (`data/example_pre_annotated.csv`):**
+-   **Example Input (`data/ex_2.csv`):**
     *The file must contain the columns: `ClinPred_score`, `BayesDel_addAF_score`, `BayesDel_noAF_score`, `MetaRNN_score`.*
     ```csv
     chrom,pos,ref,alt,ClinPred_score,BayesDel_addAF_score,BayesDel_noAF_score,MetaRNN_score
@@ -166,8 +167,8 @@ Directly predict on a file that already contains the necessary sub-model scores.
       --timestamp <other_model_timestamp>
     ```
 
-### OPTIONAL: To re-train and evaluate model with new datasets
--   **To Re-Train:**
+### OPTIONAL: To train and evaluate model with new datasets
+-   **To train:**
     ```bash
     python scripts/train.py 
     ```
