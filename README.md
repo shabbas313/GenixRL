@@ -45,11 +45,12 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 **3. Install Dependencies**
-Step No. 1: Install all required third-party libraries
+
+Step 1: Install all required third-party libraries
 ```bash
 pip install -r requirements.txt
 ```
-Step No. 2: Install GenixRL, making the predict.py script available
+Step 2: Install GenixRL, making the predict.py script available
 ```bash
 pip install .
 ```
