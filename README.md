@@ -1,4 +1,4 @@
-# GenixRL: A Reinforcement-learning−based Ensemble for Missense Pathogenicity Prediction and Tiered VUS Reclassification  
+#   Reinforcement learning−based dynamic ensemble for missense variant effect prediction and tiered reclassification of VUS
 
 GenixRL is a state-of-the-art ensemble model for predicting the pathogenicity of missense variants. It uses a novel reinforcement learning (RL) framework to dynamically determine the optimal weights for combining scores from complementary predictors (BayesDel_addAF, BayesDel_noAF, ClinPred, and MetaRNN) to classify missense variants as 'Pathogenic' or 'Benign'.
 
