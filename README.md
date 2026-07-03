@@ -176,7 +176,7 @@ This repository also contains scripts for re-training and evaluating the GenixRL
     ```
 Ensure the required training data is present in the data/ directory.
 
--   **To Evaluate a mdoel on Independent Set**
+-   **To Evaluate a model on Independent Set**
 	```bash
     python scripts/evaluate_model.py 
     ```
