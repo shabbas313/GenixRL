@@ -103,7 +103,7 @@ Quickly annotate and predict a single variant. GenixRL will use the default anno
 
 -   **By Genomic Coordinates:**
 	```bash
-    python scripts/predict.py --variant "6:32040871:C:A"
+    python scripts/predict.py --variant "6:32040871:C:A" --dbnsfp-path /path/to/your/genixrl_scores_db.tsv.gz
     ```
 -   **With  a Custom Database**
 	```bash
