@@ -91,7 +91,7 @@ The model files and medians are located by default in `data/outputs/`.
 ### The GenixRL Prediction Tiers
 
 The output column `GenixRL_Predictions` will have one of three values:
--   **Benign**: Score < optimal threshold (determined from training i.e., 0.532).
+-   **Benign**: Score < optimal threshold (determined from training i.e., 0.53).
 -   **Pathogenic**: Score is between the optimal and strong thresholds.
 -   **High-Confidence Pathogenic**: Score ≥ strong threshold (default: 0.709). This threshold can be adjusted with the `--strong-threshold` flag.
 
