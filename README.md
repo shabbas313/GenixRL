@@ -196,5 +196,18 @@ As a resource to the community, we have made the GenixRL prioritization score fo
 ## Citation
 
 If you use GenixRL in your research, please cite our paper:
+### **Standard Citation (APA)**
+> Abbas, S. H., Wu, J., & Shi, T. (2026). Reinforcement learning-based dynamic ensemble for missense variant effect prediction and tiered prioritization of VUS. *Computer Methods and Programs in Biomedicine*, 109580. https://doi.org/10.1016/j.cmpb.2026.109580
 
-> [Author, A., Author, B., et al. (Year). GenixRL: Advancing Missense Variant Prediction... *Journal Name*.] 
+### **BibTeX**
+```bibtex
+@article{abbas2026reinforcement,
+  title={Reinforcement learning-based dynamic ensemble for missense variant effect prediction and tiered prioritization of VUS},
+  author={Abbas, Syed Hassan and Wu, Jun and Shi, Tieliu},
+  journal={Computer Methods and Programs in Biomedicine},
+  pages={109580},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.cmpb.2026.109580},
+  issn={0169-2607}
+}
